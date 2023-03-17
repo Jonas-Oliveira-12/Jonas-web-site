@@ -1,0 +1,86 @@
+/*- alterando tudo no html -*/
+*{
+    margin: 0;          /*- zerando as margens  -*/
+    padding: 0;         /*- zerando as margens  -*/
+    font-family: "Arial", sans-serif;
+}
+
+/*- criando uma div central ,com display flex para poder colocar uma div do lado da outra-*/
+.principal {
+    display: flex;
+    height: 100vh; /*- para ocupar a tela toda -*/
+}
+
+/*- criando uma div para colocar a foto de perfil e informações -*/
+.painel_da_esquerda {
+    background-color: #1A1314;
+    width: 40%;
+    justify-content: center;
+    flex-direction: column; /* adicionando essa propriedade para exibir em coluna */
+    align-items: center; 
+    padding: 20px;
+    
+}
+
+/*- criando uma div para colocar a informações sobre o currículo -*/
+.conteudo {
+    background-color: #2C2B29;
+    width: 60%;
+}
+
+/*- alterando foto de perfil -*/
+.foto_perfil{
+    display: block;
+    margin: 0 auto;
+    
+    width: 60%;
+    height: auto;
+    border-radius: 50%;
+}
+
+/*- alteando cor e tamnho dos textos -*/
+.prazer{
+    color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+}
+.jonas{
+    color: #C39F41;
+    padding-left: 5%;
+    
+}
+
+/*- alteando a parte sobre informações -*/
+.informacoes {
+    color: white;
+    text-align: left;
+}
+/*- alteando a parte sobre habilidades -*/
+.habilidades{
+    color: white;
+    text-align: left;
+}
+/*- alteando para telas menores -*/
+@media only screen and (max-width: 700px) {
+    .prazer{
+        color: white;
+        padding-top: 5%;
+        padding-left: 5%;
+        font-size: 3vw;
+    }
+    .jonas{
+        color: #C39F41;
+        padding-left: 5%;
+        font-size: 3vw;
+    }
+    .informacoes {
+        color: white;
+        text-align: left;
+        font-size: 10%;
+    }
+    .habilidades{
+        color: white;
+        text-align: left;
+        font-size: 10%;
+    }
+}
